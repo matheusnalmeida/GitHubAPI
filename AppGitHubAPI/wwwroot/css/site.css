@@ -1,0 +1,257 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Personalized Styles
+-------------------------------------------------- */
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.repository-search-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-search-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-search-repository {
+    border: 1px solid #202529;
+    border-radius: 3px;
+    padding: 2px 15px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(173, 173, 173);
+    outline: transparent;
+}
+
+.btn-search-repository {
+    background-color: #202529;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 2px 8px;
+    height: 35px;
+    width: 100px;
+    outline: transparent !important;
+}
+
+    .btn-search-repository:active {
+        background-color: #20252994;
+    }
+
+.repository-list-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.repository-list-container {
+    margin-top: 30px;
+}
+
+.repository {
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.74);
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 800px;
+}
+
+.repository-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.repository-author {
+    font-size: 16px;
+}
+
+.repository-author::after {
+    content: "•";
+    margin: 0 5px;
+}
+
+.repository-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.repository-details-container {
+    display: flex;
+    align-items: center;
+}
+
+    .repository-details-container h3 {
+        font-size: 16px;
+        margin-right: 10px;
+        color: #747474;
+    }
+
+.btn-fav {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: transparent !important;
+}
+
+.btn-fav svg{
+    fill:gray;
+}
+
+.btn-fav-not svg{
+    fill:yellow;
+}
+
+.btn-fav-not {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: transparent !important;
+}
+
+.repository-title-container .fav-start {
+    fill: black !important;
+}
+
+    .repository-title-container .fav-start .active {
+        fill: green !important;
+    }
+
+.repository-langs {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
+}
+
+.repository-description {
+    font-size: 15px;
+    margin: 10px 0;
+    max-width: 600px;
+    color: #333333;
+}
+
+.repository-footer {
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(94, 94, 94);
+}
+
+.repository-details-page {
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.74);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+    .repository-details-page .main-container {
+        margin: 20px 0 30px 0;
+    }
+
+    .repository-details-page .repository-description {
+        color: #4e4e4e;
+    }
+
+    .repository-details-page .main-container-section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .repository-details-page .contributor,
+    .repository-details-page .contributor h4 {
+        align-items: center;
+        display: flex;
+    }
+
+    .repository-details-page .contributor {
+        margin: 10px 0;
+        margin-left: 5px;
+    }
+
+    .repository-details-page .contributors-avatar {
+        height: 20px;
+        border-radius: 5px;
+        margin-right: 5px;
+    }
+
+    .repository-details-page .contributors-username {
+        color: #202529;
+        font-size: 14px;
+    }
