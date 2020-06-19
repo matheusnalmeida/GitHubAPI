@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to GitHubAPI 👋</h1>
+<h1 align="center">Bem Vindo ao GitHubAPI 👋</h1>
 
 Tela de Busca              |  Tela de Detalhes
 :-------------------------:|:-------------------------:
