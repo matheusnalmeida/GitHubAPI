@@ -1,4 +1,13 @@
 <h1 align="center">Welcome to GitHubAPI 👋</h1>
+
+Tela de Busca              |  Tela de Detalhes
+:-------------------------:|:-------------------------:
+![](./assets/buscar.png)  |  ![](./assets/detalhes.png)
+
+Tela de Favoritos           |  Tela de Meus Repositorios
+:---------------------------:|:-------------------------:
+![](./assets/favoritos.png)  |  ![](./assets/meus_repositorios.png)
+
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/CSharp-%3E%3D.svg" />
