@@ -49,7 +49,7 @@
         </div>
         <script type="text/javascript">
             function processarFavorito(repositoryID) {
-                url = '@Url.Action("ProcessarFavoritoP", "GitHubInfo", new { repositorio = "repositorioID"})'
+                url = '@Url.Action("ProcessarFavorito", "GitHubInfo", new { repositorio = "repositorioID"})'
                 url = url.replace("repositorioID", repositoryID);
                 window.location.href = url;
             }

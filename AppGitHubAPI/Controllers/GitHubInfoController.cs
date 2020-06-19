@@ -19,15 +19,15 @@ namespace AppGitHubAPI.Controllers
             return View();
         }
 
-        public IActionResult MeusRepositoriosP() {
+        public IActionResult MeusRepositorios() {
             MeusRepositorios apiRequisition = new MeusRepositorios();
             List<Repositorio> listaDeRepositorios = apiRequisition.RealizaConexao();
             ViewData["listaDeRepositorios"] = listaDeRepositorios;
             ViewData["quantidadeDeRepo"] = listaDeRepositorios.Capacity;
-            return View();
+            return View("MeusRepositorios");
         }
 
-        public IActionResult ProcessarFavoritoP(int repositorio) {
+        public IActionResult ProcessarFavorito(int repositorio) {
             BuscarRepositorioID buscarRepositorioID = new BuscarRepositorioID(repositorio);
             RepositoriosFavoritosDAO repositoriosFavoritosDAO = new RepositoriosFavoritosDAO();
             Repositorio repositorioEncontrado = buscarRepositorioID.RealizaConexao();
@@ -42,15 +42,15 @@ namespace AppGitHubAPI.Controllers
             return View("Index");
         }
 
-        public IActionResult ListarFavoritosP()
+        public IActionResult ListarFavoritos()
         {
             RepositoriosFavoritosDAO buscarRepositorios = new RepositoriosFavoritosDAO();
             List<Repositorio> favoritos = buscarRepositorios.readALL();
             ViewData["listaDeFavoritos"] = favoritos;
-            return View();
+            return View("ListarFavoritos");
         }
 
-        public IActionResult BuscarRepositorioP(string nomeRepositorio) {
+        public IActionResult BuscarRepositorio(string nomeRepositorio) {
             BuscarRepositoriosNome buscarRepositorios = new BuscarRepositoriosNome(nomeRepositorio);
             List<Repositorio> result = buscarRepositorios.RealizaConexao();
             ViewData["listaDeBuscados"] = result;
@@ -64,7 +64,7 @@ namespace AppGitHubAPI.Controllers
             List<Usuario> listaDeContribuidores = buscarContribuidores.RealizaConexao();
             ViewData["repositorio"] = repositorio;
             ViewData["listaDeContribuidores"] = listaDeContribuidores;
-            return View();
+            return View("RepositoryDetails");
         }
     }
 }

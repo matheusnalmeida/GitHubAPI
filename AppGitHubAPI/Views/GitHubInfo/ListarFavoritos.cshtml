@@ -1,13 +1,12 @@
 ﻿@using AppGitHubAPI.Models.repo_classes
-@using System.Collections.Generic;
 
 @{
-    ViewData["Title"] = "Meus Repositorios";
+    ViewData["Title"] = "Listar Favoritos";
 }
 
 <div class="repository-list-container">
     <ul>
-        @foreach (var repository in (List<Repositorio>)ViewData["listaDeRepositorios"])
+        @foreach (var repository in (List<Repositorio>)ViewData["listaDeFavoritos"])
         {
             <li class="repository">
                 <div class="repository-title-container">
@@ -36,7 +35,7 @@
 
     <script type="text/javascript">
         function processarFavorito(repositoryID) {
-            url = '@Url.Action("ProcessarFavoritoP", "GitHubInfo", new { repositorio = "repositorioID"})'
+            url = '@Url.Action("ProcessarFavorito", "GitHubInfo", new { repositorio = "repositorioID"})'
             url = url.replace("repositorioID", repositoryID);
             window.location.href = url;
         }

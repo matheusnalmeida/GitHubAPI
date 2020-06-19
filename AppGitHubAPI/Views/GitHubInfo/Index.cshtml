@@ -48,13 +48,13 @@
                         function buscarRepositorio() {
                             var nomeRepositorioA = document.getElementById("input-repository-search").value
                             if (nomeRepositorioA) {
-                                url = '@Url.Action("buscarRepositorioP", "GitHubInfo", new { nomeRepositorio = "nomeRepoInputText" } )'
+                                url = '@Url.Action("buscarRepositorio", "GitHubInfo", new { nomeRepositorio = "nomeRepoInputText" } )'
                                 url = url.replace("nomeRepoInputText", nomeRepositorioA);
                                 window.location.href = url;
                             }
                         }
                         function processarFavorito(repositoryID) {
-                            url = '@Url.Action("ProcessarFavoritoP", "GitHubInfo", new { repositorio = "repositorioID"})'
+                            url = '@Url.Action("ProcessarFavorito", "GitHubInfo", new { repositorio = "repositorioID"})'
                             url = url.replace("repositorioID", repositoryID);
                             window.location.href = url;
                         }
